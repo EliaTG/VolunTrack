@@ -1,0 +1,35 @@
+.homeSection{
+    display: flex;
+    flex: 1;
+    .homeContainer{
+        background-color: #f9fbfa;
+        width: 80vw;
+        flex: 7;
+        .topHome{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+                .createEvent{
+                    margin: 0 45px 0 0;
+                }
+                .h2Greetings{
+                    color: #01214a;
+                    margin: 10px 0 0 40px;
+                }
+        }
+        .volunteerJob{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            // gap: 5px;
+            gap: 20px 5px; 
+            grid-auto-flow: row;
+            flex-direction: row;
+            margin: 50px 20px 30px 20px;
+            // width: ;
+            // grid-template-columns: repeat(4, 1fr);
+            // justify-content: center;
+            // align-items: center;
+            // grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+        }
+    }
+}

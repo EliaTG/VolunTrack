@@ -1,0 +1,33 @@
+.tableSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+    .table{
+        width: 95%;
+        .cellWrapper{
+            display: flex;
+            align-items: center;
+            .image{
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                margin-right: 10px;
+                object-fit: cover;
+            }
+        }
+        .status {
+            padding: 5px;
+            border-radius: 5px;
+        
+            &.Active {
+            color: green;
+            background-color: rgba(0, 128, 0, 0.151);
+            }
+            &.Banned {
+            color: rgb(183, 33, 54);
+            background-color: rgba(255, 72, 66, 0.16);
+            }
+        }
+    }
+}

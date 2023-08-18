@@ -1,0 +1,65 @@
+
+.sidebar{
+    position: sticky;
+    top: 0; 
+    // display: flex;
+    // flex: 1;
+    height: 100vh;
+    background-color: #f9fbfa;
+    width: 15vw;
+    min-width: 270px;
+    border-right: 2px dotted rgba(145, 158, 171, 0.12);
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        padding: 24px 20px;
+    }
+    .avatarSidebar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 70px;
+        width: 85%;
+        margin: 0 auto ;
+        border-radius: 9px;
+        padding: 16px 20px;
+        background-color: rgba(145, 158, 171, 0.12);
+        .profileName{
+            margin: 0 0 0 15px;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: rgb(33, 43, 54);
+        }
+    }
+    .sidebarList{
+        padding: 10px;
+        margin: 35px 0 0 0;
+        ul {
+            li{
+                display: flex;
+                align-items: center;
+                color: rgb(33, 43, 54);
+                height: 45px;
+                padding: 8px 0 8px 15px;
+                width: 100%;
+                margin: 0 auto ;
+                border-radius: 9px;
+                cursor: pointer;
+                span{
+                    margin: 0 0 0 10px;
+                }
+                &:hover{
+                    background-color: rgba(149, 169, 188, 0.12);
+                }
+                &:active{
+                    background-color: rgba(145, 158, 171, 0.12);
+                }
+                .MuiSvgIcon-root{
+                    font-size: 19px;
+                    // color: #637381;
+                    color: #01214a;
+                }
+            }
+        }
+    }
+}
